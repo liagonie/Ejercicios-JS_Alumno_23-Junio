@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Uso de prompt, confirm y do-while en JavaScript</title>
+    </head>
+    <body>
+        <script>
+            var mensaje = "";
+            
+            do{
+                var cadena = prompt("Introduce una palabra");
+                
+                if(mensaje == ""){
+                    mensaje = mensaje + cadena;
+                }
+                
+                else{
+                    mensaje = mensaje + "*" cadena;
+                }
+            } while (confirm("¿Desea seguir escribiendo?"));
+            document.write(mensaje);
+        </script>
+    </body>
+</html>

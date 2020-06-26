@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>01_TareaJS</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <script>
+            //prompt para pedir datos
+            var cal = prompt ("Ingresa tu calificación");
+            
+            //ciclo 
+            if (cal<=10 && cal>=9.5){
+                alert("Tu nivel de competencia es Autónomo AU");
+            }
+            
+            else if (cal<=9.4 && cal>=8.5){
+                alert("Tu nivel de competencia es Destacado DE");
+            }
+            else if (cal<=8.4 && cal>=7.5){
+                alert("Tu nivel de competencia es Satisfactorio SA");
+            }
+            else if (cal<=7.4 && cal>=0){
+                alert("Tu nivel de competencia no acredita NA");
+            }
+            else{
+                alert("Ingresó datos incorrectos")
+            }
+            
+            //imprim en pantalla
+            document.write(cal);
+            
+        </script>
+        <br><a href="index.html"><button>Inicio</button></a><br>
+    </body>
+</html>
